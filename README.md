@@ -165,7 +165,7 @@ ROUTINE ====================== test in /home/dan/work/37prof/learn_pprof.c
      .      .   28:     ProfilerStart("./cpu_profile.prof");
 ```
 
-导出callgrind，进行可视化，例如:
+导出callgrind，然后用KCachegrind打开进行可视化，例如:
 
 ```
 $ pprof learn_pprof cpu_profile.prof 
@@ -178,6 +178,7 @@ Welcome to pprof!  For help, type 'help'.
 (pprof) callgrind ./callgrind.out.7
 Writing callgrind file to './callgrind.out.7'.
 ```
+
 
 打开进行内存检测，例如:
 
